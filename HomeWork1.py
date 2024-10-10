@@ -1,5 +1,4 @@
 from datetime import date, datetime, timedelta
-from itertools import repeat
 
 
 def get_days_from_today(date):
