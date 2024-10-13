@@ -14,3 +14,5 @@ def get_numbers_ticket(min, max, quantity):
         return list()
     except TypeError:
         return list()
+
+get_numbers_ticket(1,11,1)
