@@ -24,6 +24,6 @@ raw_numbers = [
     "38050 111 22 11   ",
     "0664801622"
 ]
-
-sanitized_numbers = [normalize_phone(num) for num in raw_numbers]
-print("Нормалізовані номери телефонів для SMS-розсилки:", sanitized_numbers)
+for num in raw_numbers:
+    normalize_phone(num)
+    print("Нормалізовані номери телефонів для SMS-розсилки:", normalize_phone(num))
