@@ -22,6 +22,7 @@ raw_numbers = [
     "(050)8889900",
     "38050-111-22-22",
     "38050 111 22 11   ",
+    "0664801622"
 ]
 
 sanitized_numbers = [normalize_phone(num) for num in raw_numbers]
