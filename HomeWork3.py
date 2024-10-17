@@ -2,13 +2,13 @@ import re
 
 def normalize_phone(phone_number):
     pattern = r"\D"
-    corrected_num = re.sub(pattern,"", phone_number)
+    corrected_num = re.sub(pattern,"", phone_number).strip()
     if corrected_num.startswith("0"):
         corrected_num = "380" + corrected_num[1:]
     elif corrected_num.startswith("8"):
         corrected_num = "380" + corrected_num[1:]
-    elif corrected_num.startswith("3"):
-        corrected_num = "380" + corrected_num[1:]
+    elif corrected_num.startswith("380"):
+        pass
     else:
         corrected_num = "380" + corrected_num
     return f"+{corrected_num}"
